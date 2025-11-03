@@ -115,6 +115,10 @@ dist/
 public/
 .gatsby-cache/
 
+# Allow core Python agent assets
+!public/
+!public/agent_framework.py
+
 # Storybook build outputs
 .out/
 .storybook-out/
@@ -881,6 +885,11 @@ venv.bak/
 # Data files
 *.csv
 *.json
+
+# Track essential configuration JSON
+!package.json
+!tsconfig.json
+!package-lock.json
 *.xml
 *.parquet
 data/
@@ -913,5 +922,9 @@ config/database.yml
 *.rar
 *.tar
 *.zip
+
+# === Overrides for tracked Jarvis assets ===
+!public/
+!public/agent_framework.py
 
 # ===== END =====
